@@ -41,12 +41,15 @@ def Calculadora():
                 print(f"\nEl resultado es: {op}")
                 break
             case 3:
-                op = (num1 / num2)
+                op = (num1 * num2)
                 print(f"\nEl resultado es: {op}")
                 break
             case 4:
-                op = (num1 * num2)
-                print(f"\nEl resultado es: {op}")
+                if num2 == 0:
+                    print("(ERROR) No se puede dividir por cero")
+                else:
+                    op = (num1 / num2)
+                    print(f"\nEl resultado es: {op}")
                 break
             case 5:
                 op = (num1 ** num2)
